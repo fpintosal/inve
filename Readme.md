@@ -5,3 +5,5 @@ Grupo de trabajo de Inventarios
 ## Integrantes
 - Omar (fpintoxd@gmail.com)
 - Fabricio 
+
+image: ![El mejor Programador de R](foto.jpg.jpg)  
