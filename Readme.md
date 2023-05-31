@@ -6,4 +6,4 @@ Grupo de trabajo de Inventarios
 - Omar (fpintoxd@gmail.com)
 - Fabricio 
 
-image: ![El mejor Programador de R](foto.jpg)  
+![El mejor Programador de R](foto.jpg)  
