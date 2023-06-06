@@ -1,0 +1,48 @@
+---
+title: "Cluster y proveedores"
+author: "Fabricio Pinto"
+date: "2023-06-06"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Captura de datos desde la web
+
+```{r}
+library(readr)
+#BSC_proveedores <- read_csv("BSC_proveedores.csv")
+BSC_proveedores <- read.csv("https://themys.sid.uncu.edu.ar/rpalma/R-cran/UCB/BSC_proveedores.csv")
+```
+
+Creacion de histogramas
+```{r}
+hist(BSC_proveedores$Tecnologia,breaks = 20)
+```
+```{r}
+par(mfrow=c(2,2))
+hist(BSC_proveedores$Tecnologia, main = "Tecnologia")
+hist(BSC_proveedores$Normas, main = "Normas")
+hist(BSC_proveedores$Capital,main = "Capital")
+hist(BSC_proveedores$Equipo,main = "Equipo")
+```
+```{r}
+par(mfrow=c(1,1))
+plot(density(BSC_proveedores$Equipo))
+```
+```{r}
+library(car)
+scatterplotMatrix(BSC_Rawdata)
+```
+```{r}
+PC1 <- princomp(BSC_Rawdata)
+plot(PC1)
+```
+```{r}
+biplot(PC1)
+```
+
