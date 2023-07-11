@@ -3,6 +3,6 @@
 Grupo de trabajo de Inventarios
 
 ## Integrantes
-- Omar (fpintoxd@gmail.com)
-- Fabricio 
+- Omar Fabricio Pinto Salinas(fpintoxd@gmail.com)
+
 
